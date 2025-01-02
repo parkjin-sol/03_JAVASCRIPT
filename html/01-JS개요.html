@@ -6,6 +6,79 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>JavaScript</h1>
+    <h3>Script 언어</h3>
+    <pre>
+        기본 프로그램(브라우저)의 동작을
+        사용자의 요구에 맞게 수행되도록 해주는 언어
+
+        별도의 소스코드 컴파일(한 번에 이진법 변환)을 하지 않고 (일괄 번역)
+
+        인터프리터를 이용해 한 줄씩 번역, 수행하는 언어 (실시간 통역)
+
+        - 장점 : 컴파일에 소요되는 시간이 없음
+        - 단점 : 프로그램 실행 시간이 상대적으로 느림
+    </pre>
+
+    <h3>Javascript 란?</h3>
+    <pre>
+        웹 브라우저(크롬, 엣지, 웨일 등...)에서
+        주로 사용하는 인터프리터 방식의 객체 지향 프로그래밍 언어.
+        ECMA(European Computer Manufacturers Association, 유럽 컴퓨터 제조업 협회)
+
+    </pre>
     
+    <ol>
+        <li>
+            브라우저 개발자 도그 -> console에 입력하기
+            <br>
+            (JS 연습, 확인 등에 많이 사용하길 권장)
+        </li>
+        <li>
+            HTML 문서 내부에 작성하는 방법(script 태그 이용)
+            -> Internal 방식
+            <br>
+            <!-- 
+            type="button" : 아무 기능 없는 버튼
+                    -> JS를 이용해서 커스텀 
+
+            onclick : 클릭이 되었을 때 어떤 기능을 수행할지 지정하는 속성
+                -> 버튼이 클릭 되었을 때 internal Fn 이라는 함수를 실행() 해라!!
+            -->
+            <button type="button" onclick="InternalFn() ">클릭</button>
+            <script>
+                // 한 줄 주석
+                // 여러 줄 주석 (cntrl + shift + /)
+                // script 태그 : JavaScript를 작성하는 영역을 지정하는 태그
+                // function(함수) : 기능 
+                function InternalFn() {
+                    alert("버튼이 클릭되었습니다.")
+                    alert("코드는 여러 줄 작성 가능!!")
+                }
+
+            </script>
+        </li>
+        <li>
+            HTML 문서 외부에 존재하는 .js 연결해서 사용 
+            -> External 방식
+            <pre>
+                1) 원하는 위치에 .js 파일 생성
+                2) 연결을 원하는 HTML 파일 body 태그 제일 아랫쪽에 
+                    script 태그를 작성 -> src 속성 추가 
+            </pre>
+
+            <button type="button" onclick="lightMode()">라이트 모드</button>
+            <button type="button" onclick="darkMode()">다크 모드</button>
+        </li>
+        <li>
+            태그에 직접 JS 코드를 작성 
+            -> inline 방식 (권장하지 않음)
+            <br>
+            <button type="button" 
+                onclick="console.log('버튼 클릭됨!!')">inline 확인</button>
+        </li>
+    </ol>
+    <!-- 외부 js파일 연결 -->
+    <script src="../js/01-JS개요.js"></script>
 </body>
 </html>

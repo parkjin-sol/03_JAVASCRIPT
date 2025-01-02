@@ -143,6 +143,73 @@ function scopeTest2() // 함수 선언
 
     } // if 정의 끝
 
+}
+    function typeCheck() {
+        let undef;
+        console.log("undef: ", undef, typeof undef);
+  
+        
+    /*  string(문자열) : "", '' 형태로 작성된 리터럴(값) */
+    const name = "성기훈";
+    const phone = '01012341234'; 
+    
+    console.log("name : ", name, typeof name);
+    console.log("phone: ", phone, typeof phone);
 
+    /* number(숫자) : 정수, 실수 형태의 리터럴 */
+    const age = 27;
+    const height = 170;
+    const sight = 1.0;
 
+    console.log("age : ", age, typeof age);
+    console.log("height : ", height, typeof height);
+    console.log("sight : ", sight, typeof sight);
+
+    /* boolean(논리값) : true(참), false(거짓) */
+    const bool1 = true;
+    const bool2 = false;
+
+    console.log("bool1 : ", bool1, typeof bool1);
+    console.log("bool2 : ", bool2, typeof bool2 );
+
+    /* object(객체) : 값을 여러 개 저장할 수 있는 형태 */
+
+    // 1) 배열(Array) : 변수의 묶음, 
+    //  묶인 변수에 0부터 1씩 증가하는 숫자를 부여 (index)
+    
+    const numbers = [11, 22, 33]
+    // 배열 전체 타입 검사 : object 
+    console.log("numbers : ", numbers, typeof numbers);
+
+    //배열 내 요소(저장된 값) 하나씩 꺼내기
+    console.log('number[0] :', numbers[0], typeof numbers[0]);
+    console.log('number[1] :', numbers[1], typeof numbers[1]);
+    console.log('number[2] :', numbers[2], typeof numbers[2]);
+
+    const user = {
+        id : "user01",
+        pw : "pass01",
+        point: 13000
+    }
+
+    console.log("user : ", user, typeof user); //obeect 타입
+
+    // js 객체 내 요소 하나씩 꺼내기 
+    console.log("user['id'] : ", user['id'], typeof user['id']);
+    console.log("user['pw'] : ", user['pw'], typeof user['pw']);
+    console.log("user['point'] : ", user['point'], typeof user['point']);
+
+    // 함수(functon) : 함수도 변수에 대입 가능!! 
+    
+    // sumFn == 함수명
+    const sumFn = function(a, b) {
+        return a + b ; 
+    }
+    
+    console.log("sumFn : ", sumFn, typeof sumFn)
+
+    //sumFn 호출 -> () 내 값 전달 -> 계산 결과 return -> console 출력
+    console.log( sumFn(111, 987) );
+    console.log( sumFn(10, 10) );
+    console.log( sumFn(-100, 2) );
 } // 함수 정의 끝

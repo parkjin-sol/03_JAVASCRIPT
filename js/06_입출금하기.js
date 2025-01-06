@@ -92,3 +92,4 @@ function withdrawal() {
     alert (`${val}원이 출금되었습니다. 남은 잔액 : ${balance} `)
  
 }
+

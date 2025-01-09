@@ -1,0 +1,120 @@
+.my-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid rgb(53, 156, 252);
+    border-radius: 10px;
+    color: rgb(53, 156, 252);
+    font-family: "고딕";
+    font-weight: 700;
+
+    cursor : pointer; /* 포인터 손가락 모양 */
+    user-select: none; /*선택(블럭) 불가*/
+}
+.my-btn:hover {
+    color: #fff;
+    background-color: rgb(53, 156, 252);
+
+}
+.my-btn:active {
+    scale: 0.98;
+}
+
+#test1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: blue;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.test2 {
+    border: 2px solid #000;
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+
+#result2 {
+    border: 2px solid #000;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    margin: 20px;
+}
+
+.btn-container {
+    border-top: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-container > button {
+    max-width: 40px;
+    height: 20px;
+    margin: 5px 0;
+    font-size: 9px;
+}
+
+/* 실습 문제 */
+.practice-container, .practice-container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.practice-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.box:first-child {
+    border-left: 1px solid gray;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 20%;
+}
+
+.display {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid gray;
+}
+
+.inputColor {
+    width: 100%;
+    border: none;
+    padding: 8px;
+}
+.inputColor:focus {
+    outline: none;
+    border: 2px solid #000;
+}
+.practice-container button {
+    margin-top: 8px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-weight: 700;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.practice-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.practice-container button:active {
+}

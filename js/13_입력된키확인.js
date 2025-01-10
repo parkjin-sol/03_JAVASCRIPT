@@ -82,10 +82,12 @@ keys.forEach((key, index) => {
     key.addEventListener("mouseover", function () {
         key.style.backgroundImage = `url("../images/${images[index]}")`;
         key.style.cursor = "pointer"
+      
     });
 
     // 마우스 아웃 시 (이미지 제거)
     key.addEventListener("mouseout", function () {
         key.style.backgroundImage = ""; // 이미지 제거
+
     });
 });

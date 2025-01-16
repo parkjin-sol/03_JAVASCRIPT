@@ -1,0 +1,21 @@
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+.container {
+    width : 502px;
+    height: 302px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+
+    word-break: break-all;
+}
